@@ -1,0 +1,243 @@
+:root {
+    --darker: #1c2531;
+    --darkest: #111827;
+    --lightgray: #323d5e;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+    background-image: url('studenthomebg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: var(--darkest);
+    padding: 15px;
+    text-align: center;
+    color: antiquewhite;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 36px; /* Increased font size */
+    font-weight: bold;
+}
+
+main {
+    margin: 70px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+}
+
+h1{
+    font-size: 68px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+h1,
+h2,
+h4 {
+    color: var(--darkest);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* ... previous styles ... */
+
+nav {
+    width: 100%;
+    background-color: var(--lightgray);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: var(--darkest);
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #2c3e50;
+}
+
+#stud-search-input {
+    width: 20rem; /* Increased the width for a longer search bar */
+    padding: 0.2rem;
+    border-radius: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+#stud-search-btn {
+    width: 6rem; /* Matched the width with buttons */
+    padding: 0.2rem;
+    border-radius: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.0rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+section{
+    border: 2px solid var(--darkest);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 4px 1px rgba(0,0,0,0.58);
+    -webkit-box-shadow: -1px 1px 4px 1px rgba(0,0,0,0.58);
+    -moz-box-shadow: -1px 1px 4px 1px rgba(0,0,0,0.58);
+}
+
+#inventory-reservations-div{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.rent-request-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.search-table-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.scrollable-table{
+    height: 490px;
+    width: 700px;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+    font-size: 14px;
+    color: var(--darkest);
+}
+
+#stud-inventory-table th{
+    position: sticky;
+    top: 0;
+    text-align: left;
+}
+
+th {
+    background-color: var(--darkest);
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #ecf0f1;
+}
+
+.profile-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile {
+    flex-basis: calc(70% - 20px);
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.requests-container {
+    flex-basis: calc(30% - 20px);
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button,
+a.button {
+    width: 10rem;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.0rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:hover,
+a.button:hover {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+a {
+    color: var(--darkest);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}

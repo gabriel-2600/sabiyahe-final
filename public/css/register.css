@@ -1,0 +1,113 @@
+:root {
+    --darker: #1c2531;
+    --darkest: #111827;
+    --lightgray: #323d5e;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('login_bg.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: var(--lightgray);
+    padding: 20px;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container {
+    background-color: var(--lightgray);
+    text-align: center;
+    color: antiquewhite;
+}
+
+h4 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: antiquewhite;
+}
+
+input {
+    width: 20rem;
+    padding: 1rem;
+}
+
+.btn {
+    width: 10rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button.btn-register:hover {
+    background-color: lightblue;
+}
+
+#error-register,
+#success-register {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    color: darkblue;
+}
+
+#error-register {
+    background-color: #ffdddd;
+}
+
+#success-register {
+    background-color: #d4edda;
+}
+
+.nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: right;
+}
+
+
+.nav a {
+    color: antiquewhite; 
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #555;
+}
+
+input::placeholder{
+    font-size: 1.1rem;
+}
